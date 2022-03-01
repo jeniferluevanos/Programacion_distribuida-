@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
-const { appConfig } = require('./config/config')
+const { appConfig } = require('./Lib/config')
 const foo = false
 // Metodo GET en raiz
 
