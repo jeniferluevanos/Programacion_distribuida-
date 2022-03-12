@@ -1,7 +1,10 @@
 const config = {
-	appConfig: {
-		port: process.env.APP_PORT
-	}
+
+    appconfig: {
+
+        port: process.env.APP_PORT
+
+    }
 }
 
-module.exports = config
+module.exports = config;
