@@ -1,0 +1,44 @@
+html
+    head
+        title Inicio de sesión
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css")
+        meta(name="theme-color" content="#7952b3")
+        style.
+            body{ 
+                background-color: black;
+                flex-direction:column;
+            }
+    body(class="text-center" anx="4C")
+        div(class="form-floating")
+            img(
+                width="700"
+                height="200"
+                class="mb-4"
+                src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABeVUOQRhbuBNDgmv5wM2rDwLDOxI7PiCDrI17i1RkwSHF2dATO_-dCOnLmM2HvHunlBI3LCtSqiMMASRwB8pcfr3dreZN78zo4XG.png?r=cd3")            
+    main(class="form-signin")
+        form(action="/auth" method="post")
+            h2(style="color:#ffffff") Registrarse a la aventura
+            div(class="form-floating")
+                input(
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    name="email")
+                label Correo Electrónico
+            br
+            div(class="form-floating")
+                input(type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+                name="pass")
+                label Contraseña
+            button(class="w-100 btn btn-outline-success" type="submit" name="sesion") Inicia sesión
+            br
+            br
+            button(class="w-100 btn btn-outline-warning" type="submit" name="registro") Registrate
+            br
+            br
+            p(style="color:#ffffff") © 2022

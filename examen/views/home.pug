@@ -1,0 +1,98 @@
+
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='css/estilos.css')
+  link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap' rel='stylesheet')
+  title PELICULAS
+header
+  .contenedor
+    h2.logotipo PELICULA
+    nav
+      a.activo(href='#') Inicio
+      a(href='#') Programas
+      a(href='#') Pelculas
+      a(href='#') Mas Recientes
+      a(href='#') Mi lista
+main
+  .pelicula-principal
+    .contenedor
+      h3.titulo El Increible castillo Vagabundo
+      p.descripcion
+        | Sophie es una adolescente que trabaja en una tienda de sombreros en un pueblo como muchos, pero su vida da un giro total cuando una bruja la transforma en una anciana.
+        br
+        span(style="font-size:20px") Protagonistas:
+            |Chieko Baisho,Takuya Kimura,Akihiro Miwa
+        br 
+      button.boton(role='button')
+        i.fas.fa-play
+        | Reproducir
+      button.boton(role='button')
+        i.fas.fa-info-circle
+        | Mas informacion
+    div
+      iframe(
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/BCDEOoNYW18"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen)
+      
+  .peliculas-recomendadas.contenedor
+    .contenedor-titulo-controles
+      h3 Personajes
+      .indicadores
+    .contenedor-principal
+      button#flecha-izquierda.flecha-izquierda(role='button')
+        i.fas.fa-angle-left
+      .contenedor-carousel
+        .carousel
+          .pelicula
+            a(style="color:#ffffff")
+              img(src='https://i.pinimg.com/640x/28/b9/62/28b962920561378ffa091501a4b735ad.jpg')
+              br
+              br
+              span Howl Jenkins Pendragon
+          .pelicula
+            a(style="color:#ffffff")
+              img(src='https://cdn.costumewall.com/wp-content/uploads/2017/09/sophie-hatter.jpg')
+              br
+              br
+              span Sophie Hatter
+          .pelicula
+            a(style="color:#ffffff")
+              img(src='data:image/jpeg;base64,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')
+              br
+              br
+              span Calcifer
+          .pelicula
+            a(style="color:#ffffff")
+              img(src='https://images.hive.blog/p/C3TZR1g81UNaPs7vzNXHueW5ZM76DSHWEY7onmfLxcK2iPTozHiQ9KH4RTRiXeRjXMFngE6ejAV9Swr829vhx7uihUXTEzuTz3Nj8mZLyZCMM2NZNu72RHY?format=match&mode=fit')
+              br
+              br
+              span Markl
+          .pelicula
+            a(style="color:#ffffff")
+              img(src='https://areajugones.sport.es/wp-content/uploads/2021/07/studio-ghibli-bruja-del-paramo.jpeg')
+              br
+              br
+              span Bruja Calamidad
+          .pelicula
+            a(style="color:#ffffff")
+              img(src='https://www.univision.com/proxy/api/cached/picture?href=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fe%2Fel_espantapajaros.jpg&width=0&height=0&ratio_width=1240&ratio_height=698&format=webp')
+              br
+              br
+              span Principe Justin (cabeza de nabo)
+          .pelicula
+            a(style="color:#ffffff")
+              img(src='http://3.bp.blogspot.com/-YhbYKV0YVVM/UzZ8zo5d6WI/AAAAAAAAAWk/JxzeLnZUE64/w1200-h630-p-k-no-nu/tumblr_m9fvz74XXO1rt479bo1_500.gif')
+              br
+              br
+              span Hin
+
+      button#flecha-derecha.flecha-derecha(role='button')
+        i.fas.fa-angle-right
+script(src='https://kit.fontawesome.com/2c36e9b7b1.js' crossorigin='anonymous')
+script(src='js/main.js')

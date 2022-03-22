@@ -1,0 +1,60 @@
+html
+    head
+        title Registro de usuarios
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css")
+        meta(name="theme-color" content="#7952b3")
+        style.
+            body{
+                display: flex;
+                min-height: 100vh;
+                background-size: 98rem;
+                background-image:url("https://p4.wallpaperbetter.com/wallpaper/588/749/318/fantasy-art-artwork-howl-s-moving-castle-studio-ghibli-hd-wallpaper-preview.jpg");
+            }
+            main{
+                width: 20%;
+                align-items: center;
+                
+            }
+    body(class="text-center" anx="4C")
+    main(class="form-signin")
+        form(action="/registroUser" method="post")
+            img(
+            width="152"
+            height="157"
+            class="mb-4"
+            src="https://angartwork.akamaized.net/webp/?id=143925066&size=296")
+            h2(style="color:#ffffff") Registro de Usuario
+            div(class="form-floating")
+                input(
+                    type="text"
+                    class="form-control"
+                    
+                    placeholder="texto"
+                    name="username")
+                label Username
+            br
+            div(class="form-floating")
+                input(
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    name="email")
+                label Correo Electrónico
+            br
+            div(class="form-floating")
+                input(type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+                name="pass")
+                label Contraseña
+            br
+            button(class="w-100 btn btn-lg btn-info" type="submit" name="registro") Registrarme
+            br
+            br
+            button(class="w-100 btn btn-lg btn-info" type="submit" name="back") Regresar
+            br
+            br
+            p(style="color:#ffffff") © 2022
